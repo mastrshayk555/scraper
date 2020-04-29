@@ -16,13 +16,11 @@ soup = BeautifulSoup(content, 'lxml')
 
 #grabs each product
 containers = soup.find_all("div", class_="item-container")
-
-##//Making sure I can locate the first container
 #print(containers)
 
-#container = containers[0]
-#print(container) #Yes this locates the first container/card on the page
-##//End check
+container = containers[0]
+print(container)
+
 
 
 brand = []
